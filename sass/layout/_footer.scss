@@ -28,19 +28,21 @@
   line-height: 1.71;
   color: rgba(255, 255, 255, 0.6);
   transition: color var(--transition-hover);
+  &:hover,
+  &:focus {
+    color: var(--main-bright-color);
+  }
 }
-.footer__link:hover,
-.footer__link:focus {
-  color: var(--main-bright-color);
-}
+
 .footer__link-active {
   color: var(--main-bright-color);
   transition: color var(--transition-hover);
+  &:hover,
+  &:focus {
+    color: rgba(255, 255, 255, 0.6);
+  }
 }
-.footer__link-active:hover,
-.footer__link-active:focus {
-  color: rgba(255, 255, 255, 0.6);
-}
+
 .footer__social {
 }
 .social-footer {
@@ -69,13 +71,13 @@
   border-radius: 50%;
   color: var(--main-bright-color);
   transition: background var(--transition-hover);
+  &:hover,
+  &:focus {
+    background: var(--hover-color);
+  }
 }
 .social-footer__icon {
   fill: currentColor;
-}
-.social-footer__link:hover,
-.social-footer__link:focus {
-  background: var(--hover-color);
 }
 
 .footer__subscription {
@@ -112,13 +114,14 @@
   border-radius: 4px;
   color: var(--main-bright-color);
   transition: border-color var(--transition-hover);
+  &::placeholder {
+    color: rgba(255, 255, 255, 0.6);
+  }
+  &:focus {
+    border-color: var(--main-bright-color);
+  }
 }
-.subscription-footer__input::placeholder {
-  color: rgba(255, 255, 255, 0.6);
-}
-.subscription-footer__input:focus {
-  border-color: var(--main-bright-color);
-}
+
 .subscription-footer__btn {
   padding: 10px 28px;
   min-width: 200px;
@@ -138,10 +141,11 @@
   color: var(--main-bright-color);
   transition: background var(--transition-hover);
   cursor: pointer;
+  &:hover,
+  &:focus {
+    background: var(--main-btn-hover-color);
+  }
 }
-.subscription-footer__btn:hover,
-.subscription-footer__btn:focus {
-  background: var(--main-btn-hover-color);
-}
+
 .subscription-footer-icon {
 }

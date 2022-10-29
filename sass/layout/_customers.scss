@@ -23,12 +23,13 @@
   align-items: center;
   color: var(--icon-color);
   transition: border-color var(--transition-hover), color var(--transition-hover);
+
+  &:hover,
+  &:focus {
+    border-color: var(--hover-color);
+    color: var(--hover-color);
+  }
 }
 .customer__icon {
   fill: currentColor;
-}
-.customers__link:hover,
-.customers__link:focus {
-  border-color: var(--hover-color);
-  color: var(--hover-color);
 }

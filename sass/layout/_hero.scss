@@ -23,8 +23,10 @@
   color: var(--main-bright-color);
 }
 .hero__button {
-  display: block;
   margin: 0 auto;
+}
+.btn {
+  display: block;
   padding: 10px 0;
   min-width: 216px;
   background: var(--hover-color);
@@ -39,8 +41,8 @@
   border: none;
   cursor: pointer;
   transition: background var(--transition-hover);
-}
-.hero__button:hover,
-.hero__button:focus {
-  background: var(--main-btn-hover-color);
+  &:hover,
+  &:focus {
+    background: var(--main-btn-hover-color);
+  }
 }

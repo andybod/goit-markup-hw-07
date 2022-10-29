@@ -5,18 +5,18 @@
   display: flex;
   gap: 30px;
 }
-.features__item-title {
+.cards__title {
   font-size: inherit;
   line-height: 1.14;
   text-transform: uppercase;
   color: var(--dakr-color);
   margin-bottom: 10px;
 }
-.features__item-text {
+.cards__text {
   line-height: 1.71;
   color: var(--light-color);
 }
-.features__icons {
+.cards__icons {
   display: flex;
   justify-content: center;
   align-items: center;
